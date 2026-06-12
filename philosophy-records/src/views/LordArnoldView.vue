@@ -18,7 +18,7 @@
 
       <div class="absolute inset-x-0 bottom-0 p-8 text-center">
         <h1 class="text-5xl font-bold text-white mb-3">Lord Arnold</h1>
-        <p class="text-muted text-lg">A Philosophy Records Release</p>
+        <p class="text-muted text-lg">A Philosophy Records Artist</p>
       </div>
 
       <button
@@ -70,7 +70,7 @@
         rel="noreferrer noopener"
         class="inline-flex px-8 py-3 bg-white text-black rounded-xl hover:bg-zinc-200 transition font-semibold"
       >
-        Visit YouTube Channel
+        Listen on YouTube
       </a>
 
     </div>

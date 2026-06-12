@@ -18,7 +18,7 @@
 
       <div class="absolute inset-x-0 bottom-0 p-8 text-center">
         <h1 class="text-5xl font-bold text-white mb-3">HR The Messenger</h1>
-        <p class="text-muted text-lg">A Philosophy Records Release</p>
+        <p class="text-muted text-lg">A Philosophy Records Artist/Producer</p>
       </div>
 
       <button
