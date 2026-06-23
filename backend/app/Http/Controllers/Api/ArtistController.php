@@ -82,7 +82,7 @@ class ArtistController extends Controller
 
     private function ensureAdmin(Request $request): void
     {
-        if (!$request->user()?->role === 'admin') {
+        if (!$request->user() || !method_exists($request->user(), 'hasRole') || !$request->user()->hasRole('Admin')) {
             throw new AuthorizationException('Admin access required.');
         }
     }

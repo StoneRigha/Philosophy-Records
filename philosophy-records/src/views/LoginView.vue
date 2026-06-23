@@ -26,26 +26,26 @@ const login = () => {
 // Google login (redirect to /home)
 const loginGoogle = async () => {
   try {
-    const user = await googleLogin()
-    console.log('Google user:', user)
+    const response = await googleLogin();
+    localStorage.setItem('laravel_token', response.token);
+    console.log('Google auth response:', response);
 
-    // redirect after success
-    router.push('/home')
+    router.push('/home');
   } catch (err) {
-    console.error('Google login failed:', err)
+    console.error('Google login failed:', err);
   }
 }
 
 // Facebook login (redirect to /home)
 const loginFacebook = async () => {
   try {
-    const user = await facebookLogin()
-    console.log('Facebook user:', user)
+    const response = await facebookLogin();
+    localStorage.setItem('laravel_token', response.token);
+    console.log('Facebook auth response:', response);
 
-    // redirect after success
-    router.push('/home')
+    router.push('/home');
   } catch (err) {
-    console.error('Facebook login failed:', err)
+    console.error('Facebook login failed:', err);
   }
 }
 </script>
